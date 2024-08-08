@@ -44,6 +44,48 @@ function App() {
             </div>
             <button className="button-copy">Copy</button>
           </div>
+          <div className="output-wrapper">
+            <div className="range">
+              <input
+                type="range"
+                min={8}
+                max={100}
+                value={length}
+                onChange={(event) => {
+                  setLength(event.target.value);
+                }}
+              />
+              <label>Length: {length}</label>
+            </div>
+
+            <div className="entry">
+              <input
+                type="checkbox"
+                onChange={() => {
+                  setIsNumberAllowed((prev) => {
+                    !prev;
+                  });
+                }}
+                defaultChecked={isNumberAllowed}
+              />
+
+              <label htmlFor="">Number</label>
+            </div>
+
+            <div className="entry">
+              <input
+                type="checkbox"
+                onChange={() => {
+                  setIsSpecialCharacterAllowed((prev) => {
+                    !prev;
+                  });
+                }}
+                defaultChecked={isSpecialCharacterAllowed}
+              />
+
+              <label htmlFor="">Special Character</label>
+            </div>
+          </div>
         </div>
       </div>
     </>

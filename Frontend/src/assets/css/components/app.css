@@ -19,6 +19,10 @@
   font-size: 1.5rem;
 }
 
+input:hover {
+  cursor: pointer;
+}
+
 .input-section {
   display: grid;
   grid-template-columns: 1fr 0.25fr;
@@ -42,4 +46,28 @@
   background-color: rgb(57, 109, 238);
   font-size: 1.5rem;
   padding: 1rem 0.5rem;
+}
+
+.output-wrapper {
+  padding: 1rem 0.5rem;
+  background-color: rgb(122, 113, 113);
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+  border-radius: 11px;
+}
+
+label {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.range {
+  display: flex;
+  gap: 1rem;
+}
+
+.entry {
+  display: flex;
+  gap: 1rem;
 }
