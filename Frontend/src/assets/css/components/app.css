@@ -1,0 +1,45 @@
+.main-wrapper {
+  background-color: #000000;
+  height: 100vh;
+  margin: auto 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-wrapper {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem 0.5rem;
+  border-radius: 11px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+.navigation {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.input-section {
+  display: grid;
+  grid-template-columns: 1fr 0.25fr;
+  gap: 1.5rem;
+}
+
+.input-wrapper > input {
+  width: 100%;
+  height: 3rem;
+  border: 1px solid grey;
+  border-radius: 11px;
+  padding: 0.5rem 0.5rem;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+.button-copy {
+  border-radius: 11px;
+  border: none;
+  color: whitesmoke;
+  background-color: rgb(57, 109, 238);
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
+}
